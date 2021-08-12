@@ -14,6 +14,10 @@ server.listen( port, () =>
 // Routing
 app.use( express.static( path.join( __dirname, 'public' ) ) );
 
+app.get( '/', ( req, res ) =>
+{
+  res.sendFile( __dirname + "/public/" + "index.html" );
+} )
 // Chatroom
 
 let numUsers = 0;
