@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-body pages">
+        <span class="notloggedin login page"></span>
+        <div class="tab">
+            <h3>#99Chats</h3>
+        </div>
+        <div class="textarea chat page">
+            <div class="chatArea">
+        <ul class="messages"></ul>
+       </div>
+        </div>
+        <div class="userlist">
+            <ul class="userlisticons">
+            </ul>
+        </div>
+        <div class="toolbar">
+           <div>
+           <button>A</button>
+           <select name="" id="">
+               <option value="online">Online</option>
+               <option value="offline">Offline</option>
+           </select>
+            <span class="toolbar-user">
+                <img src="usericon.png" alt="usericon" width="15px" height="20px">
+            </span>
+            <span class="toolbar-speaker">
+                <img src="speaker.png" alt="speaker" width="25px" height="20px">
+            </span>
+           </div>
+        </div>
+        <div class="inputmsg">
+            <input type="text" class="inputMessage" placeholder="Type here and hit enter to send a message ">
+        </div>
+        <div class="userlogin login page">
+        <h2>JOIN CHAT</h2>
+        <label for="login">Choose a nickname:</label>
+        <input type="text" class="usernameInput" id="login">
+        <button class="loginBtn">JOIN</button>
+    </div>
+    </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/main.js"></script>
+</body>
+</html>

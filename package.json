@@ -1,20 +1,19 @@
 {
   "name": "99chats-chatroom",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "Realtime chat app! a legendary 99chats!",
+  "main": "index.js",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "node server",
+    "dev": "nodemon index"
   },
+  "author": "Fahim Zada",
+  "license": "MIT",
   "dependencies": {
-    "next": "11.0.1",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "express": "^4.17.1",
+    "socket.io": "^2.4.0"
   },
   "devDependencies": {
-    "eslint": "7.32.0",
-    "eslint-config-next": "11.0.1"
+    "nodemon": "^2.0.2"
   }
 }
